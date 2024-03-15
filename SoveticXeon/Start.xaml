@@ -1,0 +1,28 @@
+﻿<Page x:Class="SoveticXeon.Start"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       xmlns:vm="clr-namespace:SoveticXeon.VievModel"
+      xmlns:local="clr-namespace:SoveticXeon"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="750"
+      Title="Start">
+
+    <Grid Background="white">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Барахолка" FontSize="25" />
+                <TextBlock Text=" CCCP" FontSize="25" Foreground="REd"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Button x:Name="CPU" Content="CPU" Width="250" Click="CPU_Click"/>
+                <Button x:Name="GPU" Content="GPU" Width="250" Click="GPU_Click"/>
+                <Button x:Name="ZU" Content="SSD or HDD" Width="250" Click="ZU_Click"/>
+            </StackPanel>
+            <TextBlock Text="Бoльше наших приложений на " HorizontalAlignment="Center" Margin="0 25 0 25" FontSize="25"/>
+            <Image Source="C:\Users\Leynard\Downloads\house.png" Height="300"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>
